@@ -25,3 +25,12 @@ function moveandmark!(robot, side)
         putmarker!(robot)
     end
 end
+
+function back!(robot, count_down, count_left)
+    for i in 1:count_down
+        move!(robot, Nord)
+    end
+    for i in 1:count_left
+        move!(robot, Ost)
+    end
+end
